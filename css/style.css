@@ -23,7 +23,12 @@ body{
 {
     clear:both;
 }
+h4{
 
+	Color:#000;
+	font-size: 18px;
+	padding-bottom:10px;
+}
 img{
 	border: 0;
 	max-width: 100%;
@@ -31,14 +36,29 @@ img{
 }
 *:focus {
  outline:none;	
+} 
+a{
+
+	color:##7b7979!important
+}
+a:hover{
+
+	color: #7b7979;
+	text-decoration: underline;
 }
 .float-left{
 	float: left;	
 	margin: 120px 0 0 80px;
 }
+.floatright{
 
+	float: right;
+	position: relative;
+	width: 255px;
+}
 .float-right{
 	float: right;
+
 	margin: 0 20px 0 0;
 }
 .center{
@@ -202,7 +222,7 @@ position:relative;
 	border-bottom:1px solid #afadad;
 }
 .partdesigner{ 
- padding-left: 9%;
+ padding-left: 5%;
   padding-top: 4%;
   width: 277px;
 }
@@ -400,5 +420,5 @@ font-weight:bold;
 }
 #workModal img{
 	max-width: 100%;
-	margin-bottom: 15px;
+	margin-bottom: 22px;
 }
