@@ -1,0 +1,13 @@
+@import 'variables';
+
+$primary: $pink;
+$secondary: $light-pink;
+
+.primary {
+  color: $pink;
+}
+
+.bg-primary {
+  background-color: $pink;
+  color: #ffffff;
+}
