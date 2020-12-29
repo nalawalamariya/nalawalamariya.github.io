@@ -55,6 +55,10 @@
     {
       "code": "NP",
       "name": "Nepal"
+    },
+    {
+      "code": "SE",
+      "name": "Sweden"
     }
   ]
 }
