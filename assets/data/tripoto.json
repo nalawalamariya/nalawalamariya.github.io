@@ -131,5 +131,12 @@
      "title":"Japan Part 5 - Day trip from Tokyo",
      "order": 16,
      "countryCode": "JP"
-  }
+  },
+  {
+    "url":"https://www.tripoto.com/trip/magnificent-northern-lights-in-abisko-sweden-605a3a8979c0d",
+    "thumbnailUrl":"https://static2.tripoto.com/media/filter/nl/img/391050/TripDocument/1616523712_lights.jpeg",
+    "title":"Magnificent Northern lights in Abisko, Sweden",
+    "order": 0,
+    "countryCode": "SE"
+ }
 ]
