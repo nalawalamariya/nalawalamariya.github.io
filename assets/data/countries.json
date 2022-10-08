@@ -63,6 +63,18 @@
     {
       "code": "AT",
       "name": "Austria"
+    },
+    {
+      "code": "EE",
+      "name": "Estonia"
+    },
+    {
+      "code": "IT",
+      "name": "Italy"
+    },
+    {
+      "code": "BE",
+      "name": "Belgium"
     }
   ]
 }
