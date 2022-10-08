@@ -950,25 +950,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
-/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../environments/environment */ "./src/environments/environment.ts");
-
 
 
 
 let BehanceService = class BehanceService {
-    constructor(httpClient) {
+    constructor(httpClient, window) {
         this.httpClient = httpClient;
-        this.behanceUrl = _environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].behanceUrl;
+        this.window = window;
     }
     getMedia() {
-        const url = `${this.behanceUrl}/assets/data/behance.json`;
+        const url = `${this.window.location.origin}/assets/data/behance.json`;
         return this.httpClient
             .get(url)
             .toPromise();
     }
 };
 BehanceService.ctorParameters = () => [
-    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }
+    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] },
+    { type: Window }
 ];
 BehanceService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])()

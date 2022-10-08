@@ -1793,25 +1793,19 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
     /*! @angular/common/http */
     "./node_modules/@angular/common/fesm2015/http.js");
-    /* harmony import */
-
-
-    var _environments_environment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
-    /*! ../../environments/environment */
-    "./src/environments/environment.ts");
 
     var BehanceService = /*#__PURE__*/function () {
-      function BehanceService(httpClient) {
+      function BehanceService(httpClient, window) {
         _classCallCheck(this, BehanceService);
 
         this.httpClient = httpClient;
-        this.behanceUrl = _environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].behanceUrl;
+        this.window = window;
       }
 
       _createClass(BehanceService, [{
         key: "getMedia",
         value: function getMedia() {
-          var url = "".concat(this.behanceUrl, "/assets/data/behance.json");
+          var url = "".concat(this.window.location.origin, "/assets/data/behance.json");
           return this.httpClient.get(url).toPromise();
         }
       }]);
@@ -1822,6 +1816,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     BehanceService.ctorParameters = function () {
       return [{
         type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]
+      }, {
+        type: Window
       }];
     };
 
