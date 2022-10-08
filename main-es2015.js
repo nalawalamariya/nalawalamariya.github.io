@@ -899,8 +899,7 @@ let TravelComponent = class TravelComponent {
             // insert row header
             dataTable.push(['Country', 'PostCount']);
             dataTable = dataTable.concat(countries.map(country => {
-                const hasPost = this.posts.findIndex(post => post.countryCode === country.code) >= 0;
-                return [country.code, (hasPost ? 1 : 0)];
+                return [country.code, 0];
             }));
             this.drawChart(dataTable);
         });
@@ -917,7 +916,7 @@ let TravelComponent = class TravelComponent {
                 },
                 enableRegionInteractivity: true,
                 colorAxis: {
-                    colors: ['#D183C9', '#8B5FBF']
+                    colors: ['#8B5FBF']
                 }
             }
         };

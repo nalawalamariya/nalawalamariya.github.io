@@ -1708,10 +1708,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
             dataTable.push(['Country', 'PostCount']);
             dataTable = dataTable.concat(countries.map(function (country) {
-              var hasPost = _this4.posts.findIndex(function (post) {
-                return post.countryCode === country.code;
-              }) >= 0;
-              return [country.code, hasPost ? 1 : 0];
+              return [country.code, 0];
             }));
 
             _this4.drawChart(dataTable);
@@ -1731,7 +1728,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
               },
               enableRegionInteractivity: true,
               colorAxis: {
-                colors: ['#D183C9', '#8B5FBF']
+                colors: ['#8B5FBF']
               }
             }
           };
