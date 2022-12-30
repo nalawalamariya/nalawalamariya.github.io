@@ -123,7 +123,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<nav>\n  <div class=\"row\">\n    <div class=\"profile col-md-6 col-xs-12\">\n      <a [routerLink]=\"'/'\">\n        <img class=\"profile-image\" src=\"/assets/images/mariya-profile.png\" title=\"Mariya Nalawala\" alt=\"Mariya Nalawala\" />\n        <h3 class=\"d-inline-block\">Mariya Nalawala</h3>\n      </a>\n    </div>\n    <div class=\"work col-md-6 col-xs-12\">\n      <ul>\n        <li>\n          <a [routerLink]=\"'/design'\">Design</a>\n        </li>\n        <li>\n          <a [routerLink]=\"'/art'\">Art</a>\n        </li>\n        <li>\n          <a [routerLink]=\"'/travel'\">Travel</a>\n        </li>\n      </ul>\n    </div>\n  </div>\n</nav>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<nav>\n  <div class=\"row\">\n    <div class=\"profile col-md-6 col-xs-12\">\n      <a [routerLink]=\"'/'\">\n        <img class=\"profile-image\" src=\"/assets/images/mariya-profile.png\" title=\"Mariya Nalawala\" alt=\"Mariya Nalawala\" />\n        <h3 class=\"d-inline-block\">Mariya Nalawala</h3>\n      </a>\n    </div>\n    <div class=\"work col-md-6 col-xs-12\">\n      <ul>\n        <li>\n          <a [routerLink]=\"'/design'\">Design</a>\n        </li>\n        <li>\n          <a target=\"_blank\" [href]=\"socialProfiles.instagram\" title=\"Follow my art stories on Instagram\">Art</a>\n        </li>\n        <li>\n          <a [routerLink]=\"'/travel'\">Travel</a>\n        </li>\n      </ul>\n    </div>\n  </div>\n</nav>\n");
 
 /***/ }),
 
@@ -1174,9 +1174,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NavBarComponent", function() { return NavBarComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../environments/environment */ "./src/environments/environment.ts");
+
 
 
 let NavBarComponent = class NavBarComponent {
+    ngOnInit() {
+        this.socialProfiles = {
+            instagram: _environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].instragramUrl,
+        };
+    }
 };
 NavBarComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({

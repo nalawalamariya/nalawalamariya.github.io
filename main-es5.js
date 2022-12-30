@@ -191,7 +191,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<nav>\n  <div class=\"row\">\n    <div class=\"profile col-md-6 col-xs-12\">\n      <a [routerLink]=\"'/'\">\n        <img class=\"profile-image\" src=\"/assets/images/mariya-profile.png\" title=\"Mariya Nalawala\" alt=\"Mariya Nalawala\" />\n        <h3 class=\"d-inline-block\">Mariya Nalawala</h3>\n      </a>\n    </div>\n    <div class=\"work col-md-6 col-xs-12\">\n      <ul>\n        <li>\n          <a [routerLink]=\"'/design'\">Design</a>\n        </li>\n        <li>\n          <a [routerLink]=\"'/art'\">Art</a>\n        </li>\n        <li>\n          <a [routerLink]=\"'/travel'\">Travel</a>\n        </li>\n      </ul>\n    </div>\n  </div>\n</nav>\n";
+    __webpack_exports__["default"] = "<nav>\n  <div class=\"row\">\n    <div class=\"profile col-md-6 col-xs-12\">\n      <a [routerLink]=\"'/'\">\n        <img class=\"profile-image\" src=\"/assets/images/mariya-profile.png\" title=\"Mariya Nalawala\" alt=\"Mariya Nalawala\" />\n        <h3 class=\"d-inline-block\">Mariya Nalawala</h3>\n      </a>\n    </div>\n    <div class=\"work col-md-6 col-xs-12\">\n      <ul>\n        <li>\n          <a [routerLink]=\"'/design'\">Design</a>\n        </li>\n        <li>\n          <a target=\"_blank\" [href]=\"socialProfiles.instagram\" title=\"Follow my art stories on Instagram\">Art</a>\n        </li>\n        <li>\n          <a [routerLink]=\"'/travel'\">Travel</a>\n        </li>\n      </ul>\n    </div>\n  </div>\n</nav>\n";
     /***/
   },
 
@@ -2163,10 +2163,29 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
     /*! @angular/core */
     "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
 
-    var NavBarComponent = function NavBarComponent() {
-      _classCallCheck(this, NavBarComponent);
-    };
+
+    var _environments_environment__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ../../../environments/environment */
+    "./src/environments/environment.ts");
+
+    var NavBarComponent = /*#__PURE__*/function () {
+      function NavBarComponent() {
+        _classCallCheck(this, NavBarComponent);
+      }
+
+      _createClass(NavBarComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {
+          this.socialProfiles = {
+            instagram: _environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].instragramUrl
+          };
+        }
+      }]);
+
+      return NavBarComponent;
+    }();
 
     NavBarComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
       selector: 'app-navbar',
