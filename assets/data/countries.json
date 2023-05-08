@@ -79,6 +79,18 @@
     {
       "code": "IQ",
       "name": "Iraq"
+    },
+    {
+      "code": "FR",
+      "name": "France"
+    },
+    {
+      "code": "DE",
+      "name": "Germany"
+    },
+    {
+      "code": "CH",
+      "name": "Switzerland"
     }
   ]
 }
