@@ -91,6 +91,10 @@
     {
       "code": "CH",
       "name": "Switzerland"
+    },
+    {
+      "code": "DK",
+      "name": "Denmark"
     }
   ]
 }
